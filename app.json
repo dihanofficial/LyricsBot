@@ -1,0 +1,43 @@
+{
+    "name": "Lyrics Bot",
+    "description": "Can Help You Get Song Lyrics By @dihanofficial",
+    "logo": "https://i.imgur.com/gv2SzKr.jpg",
+    "keywords": [
+        "Telegram",
+        "Bots",
+        "Genius",
+        "Lyrics"
+    ],
+    "repository": "https://github.com/dihanofficial/lyricsbot",
+    "website": "https://telegram.dog/dihanrandila",
+    "success_url": "https://t.me/dihanrandila",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Get this from @BotFather ",
+            "required": true
+        },
+        "GENIUS_API": {
+            "description": "Genius Api From Here : https://genius.com/api-clients",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
