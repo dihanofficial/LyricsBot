@@ -17,33 +17,6 @@ Ly = Client(
 
 genius = Genius(Var.API)
 
-STARTPIC = "https://i.imgur.com/gv2SzKr.jpg"
-
-START_BTN = ikb(
-    [
-        [
-            ("💬 Updates Channel", "t.me/sophiaupdates", "url"),
-            ("🗣 Support Group", "t.me/sophiasupport_official", "url"),
-        ],
-        [
-            ("📚 Help Menu", "help"),
-            ("❌", "close"),
-        ],
-        [
-            (
-                "🔗 Source Code",
-                "https://github.com/dihanofficial",
-                "url",
-            ),
-            ("👨‍💻 Developer", "https://t.me/dihanrandila", "url"),
-        ],
-    ]
-)
-
-
-HOMEBTN = ikb([[("🏠", "home"), ("❌", "close")]])
-CLOSEBTN = [("❌", "close")]
-
 
 START_TEXT = """
 👋 Hi ! {} Welcome To LyricsBot !
@@ -149,6 +122,41 @@ async def start(c, m):
         caption=START_TEXT.format(m.from_user.mention),
         reply_markup=START_BTN,
     )
+
+
+STARTPIC = "https://i.imgur.com/gv2SzKr.jpg"
+
+START_BTN = ikb(
+    [
+        [
+            ("💬 Updates Channel", "t.me/sophiaupdates", "url"),
+            ("🗣 Support Group", "t.me/sophiasupport_official", "url"),
+        ],
+        [
+            ("📚 Help Menu", "help"),
+            ("❌", "close"),
+        ],
+        [
+            (
+                "🔗 Source Code",
+                "https://github.com/dihanofficial",
+                "url",
+            ),
+            ("👨‍💻 Developer", "https://t.me/dihanrandila", "url"),
+        ],
+    ]
+)
+
+
+HOMEBTN = ikb([[("🏠", "home"), ("❌", "close")]])
+CLOSEBTN = [("❌", "close")]
+
+
+
+
+
+
+
 
 OPC = "Follow my Github Page - https://github.com/dihanofficial"
 ERR_TEXT = "⚠️ Genius API Not Found"
